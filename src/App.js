@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import { Provider } from 'react-redux'
+import store from './store'
+import { Route } from 'react-router-dom'
+import ProductListContainer from './components/ProductListContainer'
+import ProductFormContainer from './components/ProductFormContainer';
+import ProductDetailsContainer from './components/ProductDetailsContainer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <Provider store={store} >
+        <div className="App">
+          <Route path="/" exact component={ProductListContainer} />
+          <h1>My Advertisement</h1>
+          <Route path="/" exact component={ProductFormContainer} />
+          <Route path="/products/:id" component={ProductDetailsContainer} />
+        </div>
+      </Provider>
+    )
+  }
 }
-
-export default App;
