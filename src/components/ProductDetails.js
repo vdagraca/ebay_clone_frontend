@@ -7,7 +7,9 @@ export default function ProductDetails(props) {
         <div>
             <li>Title:{product.title}</li>
             <li>Description:{product.description}</li>
-            <img src={product.picture} alt={product.title} />
+            <br />
+            <img style={{ height: 400 }} src={product.picture} alt={product.title} />
+            <br /><br />
             <li>Price:{product.price}</li>
             <li>Email:{product.email}</li>
             <li>Phonenumber:{product.phonenumber}</li>

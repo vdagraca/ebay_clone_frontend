@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import './ProductList.css'
 
 export default class ProductList extends Component {
 
     renderProductList(product) {
-        return <li key={product.name}><Link to={`/products/${product.id}`}>Title:{product.title} Price:{product.price}</Link></li>
+        return <li key={product.name}><Link to={`/products/${product.id}`} className="ListItem">{product.title} € {product.price}</Link></li>
     }
 
     render() {
@@ -14,7 +15,7 @@ export default class ProductList extends Component {
                 <h1>Product List</h1>
                 {products === null && 'Loading...'}
                 {products !== null &&
-                    <ul>
+                    <ul className={'List'}>
                         {products.map(this.renderProductList)}
                     </ul>}
             </div>

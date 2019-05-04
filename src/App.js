@@ -6,14 +6,16 @@ import { Route } from 'react-router-dom'
 import ProductListContainer from './components/ProductListContainer'
 import ProductFormContainer from './components/ProductFormContainer';
 import ProductDetailsContainer from './components/ProductDetailsContainer'
+import Header from './components/Header'
 
 export default class App extends Component {
   render() {
     return (
       <Provider store={store} >
         <div className="App">
+          <Header />
           <Route path="/" exact component={ProductListContainer} />
-          <h1>My Advertisement</h1>
+          <h1>Add New Advertisement</h1>
           <Route path="/" exact component={ProductFormContainer} />
           <Route path="/products/:id" component={ProductDetailsContainer} />
         </div>

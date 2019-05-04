@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import './ProductForm.css'
 
 export default class ProductForm extends Component {
     render() {
         return (
             <div>
-                <form>
+                <form className={'Form'}>
                     <label>Title:
                         <input type='text' name='title' value={this.props.values['title']} onChange={this.props.onChange} />
                     </label>

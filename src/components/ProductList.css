@@ -1,0 +1,17 @@
+.List {
+    background-color: orange;
+    /* min-height: 20vh; */
+    display: inline-block;
+    /* flex-direction: column; */
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 25px;
+    list-style: none;
+    border: solid black 3px;
+    padding: 20px 20px;
+}
+
+.ListItem{
+    text-decoration: none;
+    color:white;
+}
