@@ -1,10 +1,15 @@
 .Header {
     background-color: #282c34;
-    min-height: 20vh;
+    background: url("https://i.pinimg.com/564x/38/b6/d2/38b6d20b2f3724744fcecf097d84b819.jpg") no-repeat center;
+    background-size:cover;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: 50px;
     color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+/* /Users/viviandagraca/Coding/codaisseur/week-6/ebay_clone_frontend/public/pictures/market2.jpg */
