@@ -1,17 +1,30 @@
 .List {
-    background-color: orange;
-    /* min-height: 20vh; */
-    display: inline-block;
-    /* flex-direction: column; */
+    /* background-color: #DC937A; */
+    width: 80%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    /* justify-content: center; */
     font-size: 25px;
     list-style: none;
-    border: solid black 3px;
     padding: 20px 20px;
 }
 
+img {
+    max-height: 150px;;
+}
+
 .ListItem{
+    display: inline-block;
+    flex-wrap: wrap;
     text-decoration: none;
-    color:white;
+    background: white;
+    color: black;
+    padding: 10px;
+    margin: 50px 50px;
+}
+
+.product-list {
+    /* background: url("https://i.pinimg.com/564x/d4/c9/79/d4c979a369037a87f4e44bd13960cde0.jpg");
+    background-color: green; */
 }

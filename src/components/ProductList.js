@@ -5,7 +5,9 @@ import './ProductList.css'
 export default class ProductList extends Component {
 
     renderProductList(product) {
-        return <li key={product.name}><Link to={`/products/${product.id}`} className="ListItem">{product.title} € {product.price}</Link></li>
+        return <li key={product.name}><Link to={`/products/${product.id}`} className="ListItem">
+            <img style={{ height: 400 }} src={product.picture} alt={product.title} /><br />
+            {product.title} <br />€ {product.price}</Link></li>
     }
 
     render() {
