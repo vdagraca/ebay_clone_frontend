@@ -1,4 +1,7 @@
-# Ebay clone project
+# Ebay clone frontend
+
+Created the frontend using React/Redux. You can add products to the page and edit them.
+For the backend see [Ebay_clone](https://github.com/vdagraca/ebay_clone)
 
 ## [🍴🎻🚲 Check out the deployed version here!🛶🛏 ](https://affectionate-kalam-c0e83c.netlify.com/)
 
