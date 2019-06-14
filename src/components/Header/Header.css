@@ -1,6 +1,7 @@
 .Header {
     background-color: #282c34;
-    background: url("https://i.pinimg.com/564x/38/b6/d2/38b6d20b2f3724744fcecf097d84b819.jpg") no-repeat center;
+    /* background: url("https://i.pinimg.com/564x/38/b6/d2/38b6d20b2f3724744fcecf097d84b819.jpg") no-repeat center; */
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("https://images.pexels.com/photos/461830/pexels-photo-461830.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center;
     background-size:cover;
     min-height: 300px;
     display: flex;

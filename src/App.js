@@ -15,7 +15,6 @@ export default class App extends Component {
         <div className="App">
           <Header />
           <Route path="/" exact component={ProductListContainer} />
-          <h1>Add New Advertisement</h1>
           <Route path="/" exact component={ProductFormContainer} />
           <Route path="/products/:id" component={ProductDetailsContainer} />
         </div>

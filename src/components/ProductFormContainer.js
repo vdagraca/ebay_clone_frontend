@@ -39,6 +39,7 @@ export class ProductFormContainer extends Component {
         return (
 
             <div>
+                <h1>Add New Advertisement</h1>
                 <ProductForm
                     onSubmit={this.onSubmit}
                     onChange={this.onChange}
