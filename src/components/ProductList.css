@@ -11,20 +11,37 @@
 }
 
 img {
-    max-height: 150px;;
+    max-height:150px;
+    max-width:200px; 
+    object-fit: contain;
 }
 
 .ListItem{
     display: inline-block;
     flex-wrap: wrap;
-    text-decoration: none;
     background: white;
-    color: black;
-    padding: 10px;
+    padding: 20px;
     margin: 50px 50px;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.product-list {
-    /* background: url("https://i.pinimg.com/564x/d4/c9/79/d4c979a369037a87f4e44bd13960cde0.jpg");
-    background-color: green; */
+a {
+    text-decoration: none;
+    color: black;
 }
+
+h4 {
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+    /* padding: 10px; */
+}
+
+.ItemText {
+text-align: left;
+padding: 20px;
+}
+
